@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<title>HTML Academy: Седона</title>
+		<link rel="stylesheet" type="text/css" href="css/normalize.css">
+		<link rel="stylesheet" type="text/css" href="css/style-min.css">
+	</head>
+	<body>
+		<header class="main-header container">
+			<nav class="main-menu">
+				<div class="main-menu-item">
+					<a href="info.html">Информация</a>
+				</div>
+				<div class="main-menu-item">
+					<a href="photo-and-video.html">Фото и видео</a>
+				</div>
+				<div class="main-menu-item">
+					<a href="map.html">Карта штата</a>
+				</div>
+				<div class="main-menu-item">
+					<a href="catalog.html">Гостиницы</a>
+				</div>
+			</nav>
+			<div class="index-logo">
+				<a><img src="img/logo.png" width="138" height="70" alt="City of Sedona"></a>
+			</div>
+		</header>
+		<main class="container">
+			<div class="picture">
+				<img src="img/title.png" width="458" height="352" alt="Welcome to Sedona" class="welcome-picture">
+			</div>
+			<section class="reasons">
+				<h1 class="header-one reason-header">Седона &#8212; небольшой городок в Аризоне, заслуживающий большего!</h1>
+				<p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+			</section>
+			<section class="reason reason-one">
+				<div class="reason-blue reason-one-blue">
+					<h2 class="white-header white-header-one">Настоящий городок</h2>
+					<span class="number">&#8211; №1 &#8211;</span>
+					<p>Седона &#8211; не аттракцион для туристов, там течет своя жизнь</p>
+				</div>
+				<div class="reason-image reason-one-image">
+					<img src="img/reason-image.jpg" width="800" height="401" alt="Настоящий городок">
+				</div>
+			</section>
+			<section class="features">
+				<div class="feature feature-one">
+					<h2 class="header-two">Жилье</h2>
+					<p class="less-width">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+				</div>
+				<div class="feature feature-two">
+					<h2 class="header-two">Еда</h2>
+					<p class="less-width">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+				</div>
+				<div class="feature feature-three">
+					<h2 class="header-two">Сувениры</h2>
+					<p class="less-width">Не только китайского, но и местного производства!</p>
+				</div>
+			</section>
+			<section class="reason reason-two">
+				<div class="reason-image reason-two-image">
+					<img src="img/devil-bridge.jpg" width="800" height="400" alt="Мост Дьявола">
+				</div>
+				<div class="reason-blue reason-two-blue">
+					<h2 class="white-header white-header-two">Там есть<br> Мост Дьявола</h2>
+					<span class="number">&#8211; №2 &#8211;</span>
+					<p>Да, по нему можно пройти! Если, конечно, вы осмелитесь</p>
+				</div>
+			</section>
+			<section class="other-reasons">
+				<div class="reason-grey">
+					<h2 class="header-two less-header">Небольшая площадь</h2>
+					<span class="number">&#8211; №3 &#8211;</span>
+					<p class="less-width">Все достопримечательности находятся очень близко</p>
+				</div>
+				<div class="reason-grey">
+					<h2 class="header-two less-header">Красивая дорога</h2>
+					<span class="number">&#8211; №4 &#8211;</span>
+					<p class="less-width">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+				</div>
+				<div class="reason-grey">
+					<h2 class="header-two less-header">Мало туристов</h2>
+					<span class="number">&#8211; №5 &#8211;</span>
+					<p class="less-width">Большинство едет в Гранд Каньон и толпится там</p>
+				</div>
+			</section>
+			<section class="search">
+				<div class="search-text">
+					<b>Заинтересовались?</b>
+					<p>Укажите предполагаемые даты поездки,<br>
+					и мы покажем вам лучшие предложения гостиниц в Седоне!</p>
+				</div>
+				<div class="search-form">
+					<button type="button" name="form" class="form-button">Поиск гостиницы в Седоне</button>
+					<form action="https://echo.htmlacademy.ru" method="post" class="form-visible">
+						<div class="form-item">
+							<label for="date-arrive">Дата заезда:</label>
+							<input type="text" name="date-arrive" id="date-arrive" placeholder="24 апреля 2017" class="arrive">
+							<span class="calendar" title="Календарь">Календарь</span>
+						</div>
+						<div class="form-item">
+							<label for="date-departure">Дата выезда:</label>
+							<input type="text" name="date-departure" id="date-departure" placeholder="4 июля 2017" class="departure">
+							<span class="calendar" title="Календарь">Календарь</span>
+						</div>
+						<div class="adults-and-kids">
+							<div class="half-width adults">
+								<label for="adults">Взрослые:</label>
+								<button type="button" class="minus">-</button>
+								<input type="text" name="adults" id="adults" placeholder="2">
+								<button type="button" class="plus">+</button>
+							</div>
+							<div class="half-width kids">
+								<label for="kids">Дети:</label>
+								<button type="button" class="minus">-</button>
+								<input type="text" name="kids" id="kids" placeholder="0">
+								<button type="button" class="plus">+</button>
+							</div>
+						</div>
+						<input type="submit" name="search" value="Найти">
+					</form>
+				</div>
+				<div class="map">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d592668.712261634!2d-111.74209141869879!3d34.85464401921079!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1493183713084" width="1200" height="593" allowfullscreen></iframe>
+				</div>
+			</section>
+		</main>
+		<footer class="main-footer container index-footer">
+			<div class="footer-item footer-hashtag">
+				<span>#VISITSEDONA</span>
+			</div>
+			<div class="footer-item footer-social">
+				<a href="#" class="social-btn social-btn-tw">Twitter</a>
+				<a href="#" class="social-btn social-btn-fb">Facebook</a>
+				<a href="#" class="social-btn social-btn-yt">Youtube</a>
+			</div>
+			<div class="footer-item footer-copyright">
+				<span class="copyright-text">Website by</span>
+				<a href="https://htmlacademy.ru/intensive/htmlcss" class="btn-copyright">html academy</a>
+			</div>
+		</footer>
+		<script src="js/file-min.js"></script>
+	</body>
+</html>
