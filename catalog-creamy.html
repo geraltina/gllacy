@@ -56,14 +56,39 @@
 							</div>
 						</div>
 					</li>
-					<li><a href="#" class="menu-right-item full-basket">2 товара</a></li>
+					<li class="basket-list">
+						<a href="#" class="menu-right-item full-basket">2 товара</a>
+						<div class="basket-wrapper">
+							<div class="basket-field">
+								<div class="basket-item">
+									<span class="cross"></span>
+									<img src="img/mini-item-1.png" alt="Апельсиновое мороженое" width="33" height="33" class="mini-photo">
+									<span class="description">Пломбир с апельсиновым джемом</span>
+									<span class="weight-and-price">1,5 кг х <span class="price">200 руб.</span></span>
+									<span class="cost">300 руб.</span>
+								</div>
+								<div class="basket-item">
+									<span class="cross"></span>
+									<img src="img/mini-item-2.png" alt="Клубничное мороженое" width="33" height="33" class="mini-photo">
+									<span class="description">Клубничный пломбир с присыпкой из белого шоколада</span>
+									<span class="weight-and-price">1,5 кг х <span class="price">300 руб.</span></span>
+									<span class="cost">450 руб.</span>
+								</div>
+								<hr class="basket-line">
+								<div class="inline-right">
+									<span class="basket-price">Итого: 750 руб.</span>
+									<button type="button" class="btn basket-send">Оформить заказ</button>
+								</div>
+							</div>
+						</div>
+					</li>
 				</ul>
 				
 				<p class="time-working">С 10 до 20, ежедневно</p>
 				<p class="phone-number">8 812 450-25-25</p>
 			</div>
 		</header>
-		<main class="container">
+		<main class="container inner-page">
 			<div class="breadcrumbs">
 				<ul>
 					<li><a href="index.html">Главная</a></li>
@@ -81,8 +106,9 @@
 							<b>Сортировка:</b>
 							<select name="sorting" id="sorting">
 								<option>по популярности</option>
-								<option>по цене</option>
-								<option>по алфавиту</option>
+								<option>сначала недорогие</option>
+								<option>сначала дорогие</option>
+								<option>по жирности</option>
 							</select>
 						</div>
 						<div class="price-group">
@@ -196,6 +222,7 @@
 					<li><a href="#" class="page next-page"> 	&rsaquo;</a></li>
 				</ul>
 			</div>
+			<hr class="line">
 		</main>
 		<footer class="main-footer page-footer container">
 			<section class="footer-social">
@@ -217,7 +244,8 @@
 			</section>
 			<section class="footer-copyright">
 				<img src="img/copyright.png" alt="HTML Academy" width="108" height="38">
-				<p>Сделано в <a href="#">HTML Academy</a> &copy; 2017</p>
+				<p class="copyright-text">Сделано в <a href="#">HTML Academy</a> &copy; 2017</p>
+			</section>
 			</section>
 		</footer>
 		<script src="js/file-min.js"></script>

@@ -54,6 +54,23 @@ img {
 			box-shadow: 0 2px 2px 0 rgba(172, 16, 0, 0.64);
 }
 
+.btn:hover {
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#f26843), to(#e74a35));
+	background-image: linear-gradient(#f26843, #e74a35);
+	background-color: rgba(255, 255, 255, 0.2);
+	background-blend-mode: overlay;
+	-webkit-box-shadow: 0 2px 2px 0 #ac1000;
+			box-shadow: 0 2px 2px 0 #ac1000;
+}
+
+.btn:active {
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#e74a35), to(#f26843));
+	background-image: linear-gradient(#e74a35, #f26843);
+	background-color: rgba(0, 0, 0, 0.07);
+	-webkit-box-shadow: inset 0 2px 2px 0 #942718;
+			box-shadow: inset 0 2px 2px 0 #942718;
+}
+
 .breadcrumbs ul {
 	display: flex;
 	margin-top: -42px;
@@ -236,7 +253,7 @@ img {
 }
 
 .main-menu > li:hover .sub-menu {
-    display: block;
+	display: block;
 }
 
 .menu-right {
@@ -448,6 +465,128 @@ img {
 	height: 19px;
 	background-image: url(../img/basket.png);
 	background-repeat: no-repeat;
+}
+
+.basket-wrapper {
+	position: absolute;
+	top: 40px;
+	right: 0;
+	z-index: 100;
+	padding-top: 5px;
+	display: none;
+}
+
+.menu-right-list > .basket-list:hover .basket-wrapper {
+	display: block;
+}
+
+.basket-field {
+	padding: 20px;
+	width: 500px;
+	min-height: 202px;
+	font-size: 13px;
+	line-height: 24px;
+	color: #323232;
+	background-color: #f8f7f4;
+	border-radius: 5px;
+	box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
+}
+
+.basket-item {
+	position: relative;
+	padding-left: 20px;
+	padding-right: 0;
+	margin-bottom: 20px;
+	margin-right: 0;
+	display: flex;
+	align-items: center;
+	font-size: 13px;
+	line-height: 16px;
+}
+
+.basket-item:last-of-type {
+	margin-bottom: 0;
+}
+
+.basket-item .description {
+	margin-left: 13px;
+	width: 216px;
+}
+
+.basket-item .weight-and-price {
+	margin-left: 32px;
+}
+
+.weight-and-price .price {
+	color: #999999;
+}
+
+.basket-item .cost {
+	margin-left: 30px;
+}
+
+.cross {
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	top: 10px;
+	left: 0;
+}
+
+.cross:before, .cross:after {
+	position: absolute;
+	content: "";
+	left: 0;
+	height: 11px;
+	width: 1px;
+	background-color: #000000;
+}
+
+.cross:before {
+	transform: rotate(45deg);
+}
+
+.cross:after {
+	transform: rotate(-45deg);
+}
+
+.basket-line {
+	width: 500px;
+	height: 1px;
+	margin-bottom: 20px;
+	margin-top: 10px;
+	color: #a9bbb1;
+	background-color: #a9bbb1;
+	border: 0px none;
+}
+
+.basket-field .inline-right {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+
+.inline-right .basket-price {
+	margin-bottom: 15px;
+	font-size: 15px;
+	font-weight: bold;
+	line-height: 18px;
+}
+
+.inline-right .basket-send {
+	padding: 10px 15px;
+	margin: 0;
+	font-size: 18px;
+	line-height: 24px;
+	border: 0;
+}
+
+.inline-right .basket-send:hover {
+	
+}
+
+.inline-right .basket-send:active {
+	
 }
 
 .menu-right .full-basket {
@@ -870,6 +1009,95 @@ img {
 	cursor: pointer;
 }
 
+.feedback-form {
+	position: absolute;
+	top: 338px;
+	left: 363px;
+	z-index: 100;
+	display: none;
+	padding: 20px;
+	width: 437px;
+	background-color: #f8f7f4;
+	border-radius: 10px;
+}
+
+.feedback-form .feedback-cross {
+	position: absolute;
+	width: 16px;
+	height: 16px;
+	top: 16px;
+	right: 17px;
+}
+
+.feedback-cross:before, .feedback-cross:after {
+	position: absolute;
+	content: "";
+	height: 17px;
+	width: 1px;
+	background-color: #000000;
+}
+
+.feedback-cross:before {
+	transform: rotate(45deg);
+}
+
+.feedback-cross:after {
+	transform: rotate(-45deg);
+}
+
+.feedback-form .feedback-header {
+	margin-top: 0;
+	margin-bottom: 22px;
+	font-size: 24px;
+	line-height: 28px;
+	color: #323232;
+}
+
+.feedback-form .answer {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.answer .feedback-item {
+	margin-bottom: 20px;;
+	border: 1px solid #b2b2b2;
+	border-radius: 5px;
+}
+
+.answer .feedback-name,
+.answer .feedback-email {
+	padding-left: 15px;
+	min-width: 252px;
+	min-height: 44px;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: normal;
+	color: #999999;
+}
+
+.answer .feedback-text {
+	padding-top: 15px;
+	padding-left: 15px;
+	min-width: 413px;
+	min-height: 140px;
+	font-family: inherit;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: normal;
+	color: #999999;
+}
+
+.answer .send {
+	padding: 12px 20px;
+	margin-top: 5px;
+	margin-left: auto;
+	font-size: 18px;
+	line-height: 24px;
+	border: 0;
+	cursor: pointer;
+}
+
 /*Каталог*/
 .form {
 	margin-left: 40px;
@@ -945,6 +1173,11 @@ img {
 	background-color: #aabab0;
 	border-radius: 25px;
 	border: 0;
+}
+
+.sorting-group select:hover {
+	background-color: white;
+	color: black;
 }
 
 .price-group {
@@ -1183,6 +1416,17 @@ img {
 .pages .next-page {
 	padding: 0 8px 5px 8px;
 	font-size: 26px;
+}
+
+.line {
+	width: 1146px;
+	height: 1px;
+	margin-top: 28px;
+	margin-left: 40px;
+	margin-bottom: 0;
+	color: #a9bbb1;
+	background-color: #a9bbb1;
+	border: 0px none;
 }
 
 /*Футер*/
