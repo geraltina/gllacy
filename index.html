@@ -10,7 +10,7 @@
 		<header class="main-header container">
 			<nav class="menu">
 				<ul class="main-menu">
-					<li>
+					<li class="logo">
 						<a><img src="img/logo.png" alt="Gllacy Shop" width="154" height="64"></a>
 					</li>
 					<li>
@@ -33,9 +33,29 @@
 				</ul>
 			</nav>
 			<div class="menu-right">
-				<ul>
-					<li><a href="#" class="menu-right-item search">Поиск</a></li>
-					<li><a href="#" class="menu-right-item enter">Вход</a></li>
+				<ul class="menu-right-list">
+					<li class="search-item">
+						<a href="#" class="menu-right-item search">Поиск</a>
+						<div class="search-wrapper">
+							<div class="search-field">
+								<input type="text" name="search" id="search" placeholder="Что ищем?">
+							</div>
+						</div>
+					</li>
+					<li class="enter-list">
+						<a href="#" class="menu-right-item enter">Вход</a>
+						<div class="enter-wrapper">
+							<div class="enter-field">
+								<input type="text" name="email" id="email" placeholder="Электронная почта">
+								<input type="password" name="password" id="password" placeholder="Пароль">
+								<input type="submit" name="enter" value="Войти" class="btn send">
+								<div class="help-links">
+									<a href="#">Забыли пароль?</a>
+									<a href="#">Новая регистрация</a>
+								</div>
+							</div>
+						</div>
+					</li>
 					<li><a href="#" class="menu-right-item basket">Пусто</a></li>
 				</ul>
 				<p class="time-working">С 10 до 20, ежедневно</p>
@@ -61,7 +81,7 @@
 				<p class="offer-text">При покупке 2 кг пломбира добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно!</p>
 				<a href="#" class="btn wanted">Хочу шоколадки!</a>
 			</section>
-			<section class="products">
+			<section class="products index-page">
 				<article class="product-item">
 					<img src="img/hit.png" alt="Хит" width="61" height="61" class="hit">
 					<img src="img/creamy-orange.png" alt="Апельсиновое мороженое" width="267" height="267">
