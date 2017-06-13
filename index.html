@@ -64,12 +64,26 @@
 		</header>
 		<main class="main-page container">
 			<section class="promo">
-				<img src="img/ice-cream-1.png" alt="Крем-брюле и пломбир с малиновым джемом" width="1045" height="881" class="ice-cream">
 				<p class="promo-text">Крем-брюле и пломбир с малиновым джемом</p>
 				<a href="#" class="btn want-both">Давайте оба!</a>
-				<div class="slider slider-1 active"></div>
-				<div class="slider slider-2"></div>
-				<div class="slider slider-3"></div>
+				<div class="sliders">
+					<input type="radio" id="btn-1" name="toggle" checked>
+					<input type="radio" id="btn-2" name="toggle">
+					<input type="radio" id="btn-3" name="toggle">
+					<div class="slider-controls">
+						<label for="btn-1" class="slider-1"></label>
+						<label for="btn-2" class="slider-2"></label>
+						<label for="btn-3" class="slider-3"></label>
+					</div>
+					<div class="slider-inner">
+						<div class="slider-slides">
+							<img src="img/ice-cream-1.png" alt="Мороженое" width="1045" height="881" class="ice-cream img-1">
+							<img src="img/ice-cream-2.png" alt="Мороженое" width="1045" height="881" class="ice-cream img-2">
+							<img src="img/ice-cream-3.png" alt="Мороженое" width="1045" height="881" class="ice-cream img-3">
+						</div>
+					</div>
+					<div class="bg"></div>
+				</div>
 			</section>
 			<section class="free-offer raspberries">
 				<h2 class="header-two">Малинка даром!</h2>
