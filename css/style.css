@@ -1093,7 +1093,7 @@ input[name="toggle"] {
 
 .feedback-form {
 	position: absolute;
-	top: 1880px;
+	top: -14px;
 	left: 363px;
 	z-index: 100;
 	display: none;
@@ -1154,6 +1154,10 @@ input[name="toggle"] {
 	align-items: flex-start;
 }
 
+.feedback-wrapper {
+	position: relative;
+}
+
 .answer .feedback-item {
 	margin-bottom: 20px;;
 	border: 1px solid #b2b2b2;
@@ -1181,6 +1185,47 @@ input[name="toggle"] {
 	line-height: 24px;
 	font-weight: normal;
 	color: #999999;
+}
+
+.answer .answer-label {
+	position: absolute;
+	top: 15px;
+	left: 15px;
+	font-weight: normal;
+	color: #999999;
+	pointer-events: none;
+	transition: all 0.4s ease-in-out;
+}
+
+.feedback-item:hover {
+	border: 2px solid #9a9a9a;
+}
+
+.feedback-item:focus {
+	border: 2px solid #2e88e4;
+}
+
+.feedback-name:hover,
+.feedback-email:hover,
+.feedback-name:focus,
+.feedback-email:focus,
+.feedback-name:focus:hover,
+.feedback-email:focus:hover {
+	min-height: 42px;
+}
+
+.feedback-text:hover,
+.feedback-text:focus,
+.feedback-text:focus:hover {
+	min-height: 138px;
+}
+
+.feedback-item:focus ~ .answer-label {
+	top: -15px;
+	font-weight: normal;
+	font-size: 11px;
+	line-height: 13px;
+	color: #5b9ddf;
 }
 
 .answer .send {
@@ -1313,6 +1358,12 @@ input[name="toggle"] {
 	background-color: #f8f7f4;
 	border-radius: 50%;
 	cursor: pointer;
+	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1);
+}
+
+.controller:hover {
+	width: 22px;
+	height: 22px;
 }
 
 .controller-left {
@@ -1320,9 +1371,19 @@ input[name="toggle"] {
 	left: 35px;
 }
 
+.controller-left:hover {
+	top: 6px;
+	left: 34px;
+}
+
 .controller-right {
 	top: 7px;
 	right: 65px;
+}
+
+.controller-right:hover {
+	top: 6px;
+	right: 64px;
 }
 
 .grey-bg {
@@ -1352,11 +1413,19 @@ input[name="toggle"] {
 	content: "";
 	position: absolute;
 	left: 0;
-	top: 0px;
+	top: 0;
 	width: 17px;
 	height: 17px;
-	border: 2px solid white;
+	border: 1px solid white;
 	border-radius: 50%;
+}
+
+.radio-btn:hover + label::before {
+	content: "";
+	position: absolute;
+	left: -1px;
+	top: -1px;
+	border: 2px solid white;
 }
 
 .radio-btn:checked + label::before {
@@ -1364,10 +1433,10 @@ input[name="toggle"] {
 	position: absolute;
 	left: 2px;
 	top: 2px;
-	width: 9px;
-	height: 9px;
+	width: 10px;
+	height: 10px;
 	background-color: white;
-	border: 4px solid #aabcb2;
+	border: 3px solid #aabcb2;
 	box-shadow: 0 0 0 2px white;
 }
 
@@ -1407,6 +1476,13 @@ input[name="toggle"] {
 	border-radius: 4px;
 }
 
+.checkbox-btn:hover + label::before {
+	content: "";
+	width: 16px;
+	height: 16px;
+	border: 2px solid white;
+}
+
 .checkbox-btn:checked + label::before {
 	content: "";
 	position: absolute;
@@ -1417,6 +1493,16 @@ input[name="toggle"] {
 	background-image: url(../img/checkbox.png);
 	border-left: 0;
 	border-top: 0;
+}
+
+.checkbox-btn:checked:hover + label::before {
+	content: "";
+	background-image: url(../img/checkbox-hover.png);
+}
+
+.checkbox-btn:disabled + label::before {
+	content: "";
+	opacity: 0.4;
 }
 
 .products.catalog-items {
@@ -1564,6 +1650,11 @@ input[name="toggle"] {
 	-webkit-box-shadow: inset 0 0 0 3px #c2cec7;
 			box-shadow: inset 0 0 0 3px #c2cec7;
 	border-radius: 50%;
+	opacity: 0.8;
+}
+
+.main-footer .social-icon:hover {
+	opacity: 1;
 }
 
 .main-footer .social-icon:active {

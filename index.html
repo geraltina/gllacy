@@ -83,7 +83,6 @@
 								<img src="img/ice-cream-3.png" alt="Мороженое" width="1045" height="881" class="ice-cream img-3">
 							</div>
 						</div>
-						<div class="bg"></div>
 					</div>
 				</section>
 				<section class="free-offer raspberries">
@@ -179,6 +178,25 @@
 						</p>
 						<button type="button" class="btn feedback-send">Форма обратной связи</button>
 					</div>
+					<section class="feedback-form">
+						<h2 class="feedback-header">Мы обязательно вам ответим!</h2>
+						<span class="feedback-cross"></span>
+						<form action="#" method="post" class="answer">
+							<div class="feedback-wrapper">
+								<input type="text" name="name" id="name" class="feedback-item feedback-name" pattern="[1-9]{5}">
+								<label class="answer-label name-label" for="name">Как вас зовут?</label>
+							</div>
+							<div class="feedback-wrapper">
+								<input type="email" name="email" id="email" class="feedback-item feedback-email">
+								<label class="answer-label email-label" for="email">Ваша почта для ответа?</label>
+							</div>
+							<div class="feedback-wrapper">
+								<textarea wrap="hard" name="feedback" class="feedback-item feedback-text"></textarea>
+								<label class="answer-label feedback-label" for="feedback">Напишите что-нибудь...</label>
+							</div>
+							<button type="button" class="btn send">Отправить</button>
+						</form>
+					</section>
 				</section>
 			</main>
 			<footer class="main-footer container">
@@ -204,16 +222,6 @@
 					<p class="copyright-text">Сделано в <a href="#">HTML Academy</a> &copy; 2017</p>
 				</section>
 			</footer>
-			<section class="feedback-form">
-				<h2 class="feedback-header">Мы обязательно вам ответим!</h2>
-				<span class="feedback-cross"></span>
-				<form action="#" method="post" class="answer">
-					<input type="text" name="name" id="name" placeholder="Как вас зовут?" class="feedback-item feedback-name">
-					<input type="email" name="email" id="email" placeholder="Ваша почта для ответа?" class="feedback-item feedback-email">
-					<textarea wrap="hard" name="feedback" placeholder="Напишите что-нибудь..." class="feedback-item feedback-text"></textarea>
-					<button type="button" class="btn send">Отправить</button>
-				</form>
-			</section>
 		</div>
 		<script src="js/file.js"></script>
 	</body>
