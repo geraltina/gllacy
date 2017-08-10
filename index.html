@@ -13,15 +13,12 @@
 		<div class="block">
 			<header class="main-header container">
 				<nav class="menu">
+					<a class="logo"><img src="img/logo.png" alt="Gllacy Shop" width="154" height="64"></a>
 					<ul class="main-menu">
-						<li class="logo">
-							<a><img src="img/logo.png" alt="Gllacy Shop" width="154" height="64"></a>
-						</li>
 						<li>
 							<a href="catalog.html" class="menu-item catalog">Каталог</a>
 							<ul class="sub-menu">
 								<li class="new-items">Новинки</li>
-								<hr class="hr">
 								<li><a href="catalog-creamy.html">Сливочное</a></li>
 								<li><a href="#">Щербеты</a></li>
 								<li><a href="#">Фруктовый лед</a></li>
@@ -37,38 +34,42 @@
 					</ul>
 				</nav>
 				<div class="menu-right">
-					<ul class="menu-right-list">
-						<li class="search-item">
+					<div class="wrapper">
+						<div class="search-item">
 							<a href="#" class="menu-right-item search">Поиск</a>
 							<div class="search-wrapper">
 								<div class="search-field">
-									<input type="text" name="search" id="search" placeholder="Что ищем?">
+									<input type="search" name="search" id="search" placeholder="Что ищем?">
 								</div>
 							</div>
-						</li>
-						<li class="enter-list">
+						</div>
+						<div class="enter-list">
 							<a href="#" class="menu-right-item enter">Вход</a>
 							<div class="enter-wrapper">
 								<div class="enter-field">
-									<input type="text" name="email" id="email" placeholder="Электронная почта">
-									<input type="password" name="password" id="password" placeholder="Пароль">
-									<input type="submit" name="enter" value="Войти" class="btn send">
+									<form action="#" method="post">
+										<input type="email" name="email" id="email" placeholder="Электронная почта">
+										<input type="password" name="password" id="password" placeholder="Пароль">
+										<input type="submit" name="enter" value="Войти" class="btn send">
+									</form>
 									<div class="help-links">
 										<a href="#">Забыли пароль?</a>
 										<a href="#">Новая регистрация</a>
 									</div>
 								</div>
 							</div>
-						</li>
-						<li><a href="#" class="menu-right-item basket">Пусто</a></li>
-					</ul>
-					<p class="time-working">С 10 до 20, ежедневно</p>
-					<p class="phone-number">8 812 450-25-25</p>
+						</div>
+						<a href="#" class="menu-right-item basket">Пусто</a>
+					</div>
+					<div class="time-and-phone">
+						<p class="time-working">С 10 до 20, ежедневно</p>
+						<a class="phone-number" href="tel:88124502525">8 812 450-25-25</a>
+					</div>
 				</div>
 			</header>
 			<main class="main-page container">
 				<section class="promo">
-					<p class="promo-text">Крем-брюле и пломбир с малиновым джемом</p>
+					<h2 class="promo-text">Крем-брюле и пломбир с малиновым джемом</h2>
 					<a href="#" class="btn want-both">Давайте оба!</a>
 					<div class="sliders">
 						<div class="slider-controls">
@@ -79,8 +80,8 @@
 						<div class="slider-inner">
 							<div class="slider-slides">
 								<img src="img/ice-cream-1.png" alt="Мороженое" width="1045" height="881" class="ice-cream img-1">
-								<img src="img/ice-cream-2.png" alt="Мороженое" width="1045" height="881" class="ice-cream img-2">
-								<img src="img/ice-cream-3.png" alt="Мороженое" width="1045" height="881" class="ice-cream img-3">
+								<img src="img/ice-cream-2.png" alt="Мороженое" width="1065" height="859" class="ice-cream img-2">
+								<img src="img/ice-cream-3.png" alt="Мороженое" width="1079" height="854" class="ice-cream img-3">
 							</div>
 						</div>
 					</div>
@@ -99,7 +100,7 @@
 					<article class="product-item">
 						<img src="img/hit.png" alt="Хит" width="61" height="61" class="hit">
 						<img src="img/creamy-orange.png" alt="Апельсиновое мороженое" width="267" height="267">
-						<span class="price">310<span class="rouble">&#8381;</span><span class="smaller-word">/кг</span></span>
+						<span class="price">310<span class="rouble">Р</span><span class="smaller-word">/кг</span></span>
 						<a href="#" class="product-item-text">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
 						<div class="quick-view">
 							<a href="#" class="btn quick-view-btn">Быстрый просмотр</a>
@@ -108,7 +109,7 @@
 					<article class="product-item">
 						<img src="img/hit.png" alt="Хит" width="61" height="61" class="hit">
 						<img src="img/creamy-coffee.png" alt="Кофейно-шоколадное мороженое" width="267" height="267">
-						<span class="price">380<span class="rouble">&#8381;</span><span class="smaller-word">/кг</span></span>
+						<span class="price">380<span class="rouble">Р</span><span class="smaller-word">/кг</span></span>
 						<a href="#" class="product-item-text">Сливочно-кофейное с кусочками шоколада</a>
 						<div class="quick-view">
 							<a href="#" class="btn quick-view-btn">Быстрый просмотр</a>
@@ -117,7 +118,7 @@
 					<article class="product-item">
 						<img src="img/hit.png" alt="Хит" width="61" height="61" class="hit">
 						<img src="img/creamy-strawberry.png" alt="Клубничное мороженое" width="266" height="267">
-						<span class="price">355<span class="rouble">&#8381;</span><span class="smaller-word">/кг</span></span>
+						<span class="price">355<span class="rouble">Р</span><span class="smaller-word">/кг</span></span>
 						<a href="#" class="product-item-text">Сливочно-клубничное с присыпкой из белого шоколада</a>
 						<div class="quick-view">
 							<a href="#" class="btn quick-view-btn">Быстрый просмотр</a>
@@ -126,7 +127,7 @@
 					<article class="product-item">
 						<img src="img/hit.png" alt="Хит" width="61" height="61" class="hit">
 						<img src="img/creme-brulee.png" alt="Крем-брюле" width="267" height="267">
-						<span class="price">415<span class="rouble">&#8381;</span><span class="smaller-word">/кг</span></span>
+						<span class="price">415<span class="rouble">Р</span><span class="smaller-word">/кг</span></span>
 						<a href="#" class="product-item-text">Сливочное крем-брюле с карамельной подливкой</a>
 						<div class="quick-view">
 							<a href="#" class="btn quick-view-btn">Быстрый просмотр</a>
@@ -155,8 +156,8 @@
 						<div class="white-bg">
 							<p class="subscribe-text">Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
 							<form action="#" method="post">
-								<p class="visually-hidden">Введите адрес электронной почты:</p>
-								<input type="text" name="email" id="email" placeholder="Электронная почта">
+								<label for="subscribe-email" class="visually-hidden">Введите адрес электронной почты:</label>
+								<input type="text" name="email" id="subscribe-email" placeholder="Электронная почта">
 								<input type="submit" name="send" value="Отправить" class="btn send">
 							</form>
 						</div>
@@ -173,30 +174,11 @@
 						</p>
 						<p class="feedback-contacts">
 							Для заказов по телефону:<br>
-							<span class="bigger-text">8 812 450-25-25<br></span>
+							<a class="bigger-text" href="tel:88124502525">8 812 450-25-25<br></a>
 							(с 10 до 20 ежедневно)
 						</p>
 						<button type="button" class="btn feedback-send">Форма обратной связи</button>
 					</div>
-					<section class="feedback-form">
-						<h2 class="feedback-header">Мы обязательно вам ответим!</h2>
-						<span class="feedback-cross"></span>
-						<form action="#" method="post" class="answer">
-							<div class="feedback-wrapper">
-								<input type="text" name="name" id="name" class="feedback-item feedback-name" pattern="[1-9]{5}">
-								<label class="answer-label name-label" for="name">Как вас зовут?</label>
-							</div>
-							<div class="feedback-wrapper">
-								<input type="email" name="email" id="email" class="feedback-item feedback-email">
-								<label class="answer-label email-label" for="email">Ваша почта для ответа?</label>
-							</div>
-							<div class="feedback-wrapper">
-								<textarea wrap="hard" name="feedback" class="feedback-item feedback-text"></textarea>
-								<label class="answer-label feedback-label" for="feedback">Напишите что-нибудь...</label>
-							</div>
-							<button type="button" class="btn send">Отправить</button>
-						</form>
-					</section>
 				</section>
 			</main>
 			<footer class="main-footer container">
@@ -224,5 +206,24 @@
 			</footer>
 		</div>
 		<script src="js/file.js"></script>
+		<section class="feedback-form">
+			<h2 class="feedback-header">Мы обязательно вам ответим!</h2>
+			<span class="feedback-cross"></span>
+			<form action="#" method="post" class="answer">
+				<div class="feedback-wrapper">
+					<input type="text" name="name" id="name" class="feedback-item feedback-name" pattern="[1-9]{5}">
+					<label class="answer-label name-label" for="name">Как вас зовут?</label>
+				</div>
+				<div class="feedback-wrapper">
+					<input type="email" name="email" id="feedback-email" class="feedback-item feedback-email">
+					<label class="answer-label email-label" for="feedback-email">Ваша почта для ответа?</label>
+				</div>
+				<div class="feedback-wrapper">
+					<textarea wrap="hard" id="feedback" name="feedback" class="feedback-item feedback-text" cols="20"></textarea>
+					<label class="answer-label feedback-label" for="feedback">Напишите что-нибудь...</label>
+				</div>
+				<button type="submit" class="btn send">Отправить</button>
+			</form>
+		</section>
 	</body>
 </html>
