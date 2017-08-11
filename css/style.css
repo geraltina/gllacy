@@ -8,9 +8,9 @@
 
 @font-face { 
 	font-family: "Roboto";
-	src: url(../fonts/robotomedium.woff2) format("woff2"),
-		url(../fonts/robotomedium.woff) format("woff");
-	font-weight: medium;
+	src: url(../fonts/roboto500.woff2) format("woff2"),
+		url(../fonts/roboto500.woff) format("woff");
+	font-weight: 500;
 	font-style: normal;
 }
 
@@ -76,6 +76,7 @@ img {
 	color: white;
 	text-decoration: none;
 	border-radius: 40px;
+	background-color: #f26843;
 	background-image: -webkit-gradient(linear, left top, left bottom, from(#f26843), to(#e74a35));
 	background-image: linear-gradient(#f26843, #e74a35);
 	-webkit-box-shadow: 0 2px 2px 0 rgba(172, 16, 0, 0.64);
@@ -101,8 +102,8 @@ img {
 
 .breadcrumbs ul {
 	display: flex;
-	margin-top: -42px;
-	margin-left: 42px;
+	margin-top: -22px;
+	margin-left: 25px;
 	margin-bottom: 0;
 	padding-left: 0;
 	list-style: none;
@@ -158,7 +159,7 @@ img {
 .header-one {
 	margin-top: 0;
 	margin-bottom: 26px;
-	margin-left: 40px;
+	margin-left: 25px;
 	font-size: 35px;
 	font-weight: bold;
 	line-height: 41px;
@@ -186,8 +187,8 @@ img {
 }
 
 .menu .logo {
-	margin-right: 10px;
-	margin-top: 9px;
+	margin-left: 27px;
+	margin-top: 10px;
 }
 
 .main-menu {
@@ -195,7 +196,7 @@ img {
 	display: -ms-flexbox;
 	display: flex;
 	padding: 0;
-	padding-left: 27px;
+	padding-left: 12px;
 	margin-top: 9px;
 }
 
@@ -222,7 +223,6 @@ img {
 	margin-right: 2px;
 	padding: 6px 13px;
 	color: white;
-	text-decoration: none;
 	line-height: 18px;
 	text-decoration: underline;
 	-webkit-text-decoration-color: #adbdb4;
@@ -336,13 +336,13 @@ img {
 	padding: 0;
 	margin: 0;
 	padding-top: 0;
-	margin-top: 23px;
-	margin-right: 15px;
+	margin-top: 22px;
+	margin-right: 27px;
 }
 
 .menu-right .wrapper {
 	display: flex;
-	margin-bottom: 20px;
+	margin-bottom: 18px;
 }
 
 .menu-right .menu-right-item {
@@ -354,7 +354,7 @@ img {
 	margin-right: 11px;
 	font-size: 14px;
 	line-height: 16px;
-	background-color: #a1b5aa;
+	background-color: rgba(255, 255, 255, 0.2);
 	color: white;
 	text-decoration: none;
 }
@@ -609,6 +609,7 @@ img {
 	height: 15px;
 	top: 10px;
 	left: 0;
+	cursor: pointer;
 }
 
 .cross:before, .cross:after {
@@ -661,6 +662,7 @@ img {
 	font-size: 18px;
 	line-height: 24px;
 	border: 0;
+	cursor: pointer;
 }
 
 .menu-right .full-basket {
@@ -705,8 +707,8 @@ img {
 .promo .ice-cream {
 	position: absolute;
 	z-index: 50;
-	top: -398px;
-	left: 90px;
+	top: -391px;
+	left: 78px;
 	display: none;
 	width: 1045px;
 	margin: 0 auto;
@@ -716,7 +718,7 @@ img {
 	position: relative;
 	z-index: 100;
 	width: 700px;
-	margin-top: 275px;
+	margin-top: 272px;
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 0;
@@ -730,10 +732,11 @@ img {
 	z-index: 100;
 	display: inline-block;
 	margin-top: 30px;
-	margin-bottom: 38px;
-	margin-left: 461px;
+	margin-bottom: 40px;
+	margin-left: 464px;
 	padding: 11px 40px;
 	font-size: 32px;
+	font-family: "Roboto", "Arial", sans-serif;
 	line-height: 44px;
 }
 
@@ -763,15 +766,15 @@ input[name="toggle"] {
 }
 
 .slider-1 {
-	left: 30px;
+	left: 29px;
 }
 
 .slider-2 {
-	left: 58px;
+	left: 57px;
 }
 
 .slider-3 {
-	left: 87px;
+	left: 86px;
 }
 
 #btn-1:checked ~ .block label[for="btn-1"],
@@ -799,12 +802,6 @@ input[name="toggle"] {
 	background-color: #9d8b84;
 }
 
-/*
-#849d8f
-#8996a6
-#9d8b84
-*/
-
 .free-offer {
 	position: relative;
 	z-index: 100;
@@ -824,15 +821,18 @@ input[name="toggle"] {
 
 .free-offer .wanted {
 	display: inline-block;
+	vertical-align: top;
 	margin-bottom: 10px;
 	font-size: 18px;
+	font-family: "Roboto", "Arial", sans-serif;
 	line-height: 24px;
 }
 
 .raspberries {
-	margin-left: 26px;
+	margin-left: 29px;
 	margin-right: 22px;
 	margin-top: 0;
+	background-color: #932a46;
 	background-image: url(../img/raspberries.jpg);
 }
 
@@ -842,6 +842,7 @@ input[name="toggle"] {
 }
 
 .chocolates {
+	background-color: #5e170f;
 	background-image: url(../img/chocolates.jpg);
 }
 
@@ -897,7 +898,7 @@ input[name="toggle"] {
 	position: absolute;
 	top: 38px;
 	left: 0;
-	width: 20px;
+	width: 27px;
 	height: 5px;
 	background-color: white;
 }
@@ -908,9 +909,9 @@ input[name="toggle"] {
 }
 
 .product-item .product-item-text {
-	display: inline-block;
+	display: block;
 	margin-top: 5px;
-	font-weight: medium;
+	font-weight: 500;
 	color: #ffffff;
 	text-align: center;
 	text-decoration: underline;
@@ -1050,7 +1051,7 @@ input[name="toggle"] {
 	margin-bottom: 4px;
 	font-size: inherit;
 	line-height: inherit;
-	font-weight: medium;
+	font-weight: 500;
 }
 
 .blog .blog-item {
@@ -1060,6 +1061,10 @@ input[name="toggle"] {
 	font-weight: bold;
 	line-height: 30px;
 	color: #000000;
+}
+
+.blog .blog-item:hover {
+	text-decoration: none;
 }
 
 .subscription {
@@ -1080,12 +1085,14 @@ input[name="toggle"] {
 .white-bg .subscribe-text {
 	width: 510px;
 	margin-top: 0;
-	margin-bottom: 12px;
+	margin-bottom: 34px;
 }
 
 .white-bg .visually-hidden {
 	margin: 0;
-	visibility: hidden;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+	position: absolute;
 }
 
 .white-bg input[type="text"] {
@@ -1104,6 +1111,7 @@ input[name="toggle"] {
 	padding: 12px 20px;
 	border: 0;
 	font-size: 18px;
+	font-family: "Roboto", "Arial", sans-serif;
 	line-height: 22px;
 	cursor: pointer;
 }
@@ -1115,6 +1123,10 @@ input[name="toggle"] {
 	margin-top: 40px;
 	background-image: url(../img/map.png);
 	background-position: center;
+}
+
+.map .map-picture {
+	border-width: 0;
 }
 
 .feedback {
@@ -1151,13 +1163,14 @@ input[name="toggle"] {
 	margin-top: 5px;
 	font-size: 18px;
 	line-height: 24px;
+	font-family: "Roboto", "Arial", sans-serif;
 	border: 0;
 	cursor: pointer;
 }
 
 .feedback-form {
 	position: fixed;
-	top: 20vh;
+	top: 13vh;
 	left: 50%;
 	margin-left: calc(-437px/2);
 	z-index: 200;
@@ -1330,15 +1343,15 @@ input[name="toggle"] {
 
 .form-filter .send {
 	align-self: flex-end;
-	padding: 4px 23px;
+	padding: 4px 28px;
 	font-size: 16px;
 	line-height: 18px;
-	font-weight: medium;
+	font-weight: 500;
 	color: white;
 	background-color: #a6b7ae;
 	border: 2px solid white;
 	border-radius: 25px;
-	font-size: 18px;
+	font-size: 16px;
 	line-height: 24px;
 	cursor: pointer;
 }
@@ -1349,7 +1362,7 @@ input[name="toggle"] {
 }
 
 .form-filter .send:active {
-	padding: 11px 31px;
+	padding: 6px 30px;
 	border: 0;
 	color: black;
 	background-color: #eaeaea;
@@ -1364,28 +1377,45 @@ input[name="toggle"] {
 	margin-right: 16px;
 }
 
-.sorting-group b,
-.price-group b,
-.fat b,
-.fillers b {
+.sorting-group legend,
+.price-group legend,
+.fat legend,
+.fillers legend {
 	margin-left: 15px;
+	font-weight: bold;
 }
 
 .sorting-group select {
-	padding: 8px 10px;
+	padding: 10px 15px;
 	margin-top: 7px;
 	width: 193px;
 	font-size: 16px;
-	font-weight: medium;
+	font-weight: 500;
 	line-height: 18px;
 	color: white;
 	background-color: #aabab0;
+	background-image: url(../img/arrow-down.png);
+	background-repeat: no-repeat;
+	background-position: 168px 15px;
 	border-radius: 25px;
 	border: 0;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none; 
+}
+
+select::-ms-expand {
+	display: none;
+	background-image: url(../img/arrow-down.png);
+	background-repeat: no-repeat;
+	background-position: 158px 18px;
 }
 
 .sorting-group select:hover {
 	background-color: white;
+	background-image: url(../img/arrow-down-black.png);
+	background-repeat: no-repeat;
+	background-position: 168px 15px;
 	color: black;
 }
 
@@ -1468,8 +1498,8 @@ input[name="toggle"] {
 
 .grey-bg label {
 	position: relative;
-	padding-left: 35px;
-	margin-right: 11px;
+	padding-left: 30px;
+	margin-right: 16px;
 	font-size: 16px;
 	line-height: 18px;
 }
@@ -1511,8 +1541,8 @@ input[name="toggle"] {
 
 .fillers .fillers-grey {
 	margin-top: 7px;
-	margin-right: 14px;
-	padding: 9px 17px;
+	margin-right: 18px;
+	padding: 9px 18px;
 	font-size: 16px;
 	font-weight: middle;
 	line-height: 18px;
@@ -1522,8 +1552,8 @@ input[name="toggle"] {
 
 .fillers-grey label {
 	position: relative;
-	padding-left: 35px;
-	margin-right: 14px;
+	padding-left: 32px;
+	margin-right: 17px;
 }
 
 .fillers-grey label:last-child {
@@ -1607,7 +1637,7 @@ input[name="toggle"] {
 	left: 36px;
 	z-index: 300;
 	display: none;
-	padding: 15px 0;
+	padding: 12px 0;
 }
 
 .quick-view-btn {
@@ -1616,6 +1646,7 @@ input[name="toggle"] {
 	font-size: 18px;
 	font-weight: bold;
 	line-height: 24px;
+	font-family: "Roboto", "Arial", sans-serif;
 }
 
 .product-item:hover {
@@ -1625,7 +1656,6 @@ input[name="toggle"] {
 .product-item:hover::after {
 	display: block;
 }
-
 
 .product-item:hover .quick-view-btn,
 .product-item:hover .quick-view {
@@ -1637,14 +1667,14 @@ input[name="toggle"] {
 	display: flex;
 	justify-content: flex-end;
 	padding-left: 0;
-	margin-right: 7px;
+	margin-right: 19px;
 	list-style: none;
 }
 
 .pages a {
 	display: block;
 	padding: 1px 8px;
-	margin-left: 4px;
+	margin-left: 5px;
 	color: white;
 	text-decoration: none;
 	border-radius: 50%;
@@ -1684,19 +1714,23 @@ input[name="toggle"] {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	margin-top: 35px;
 	margin-left: auto;
 	margin-right: auto;
 	min-height: 100px;
 	width: 1200px;
 }
 
-.main-footer::before {
+.page-footer {
+	position: relative;
+	margin-top: 28px;
+}
+
+.page-footer::before {
 	content: "";
 	position: absolute;
-	top: -7px;
+	top: 0;
 	left: 27px;
-	width: 1159px;
+	width: 1150px;
 	height: 1px;
 	color: #a9bbb1;
 	background-color: #a9bbb1;
@@ -1704,12 +1738,15 @@ input[name="toggle"] {
 }
 
 .main-footer .visually-hidden {
-	visibility: hidden;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+	position: absolute;
 	margin: 0;
 }
 
 .main-footer .footer-social {
-	margin-left: 28px;
+	margin-left: 30px;
+	margin-top: 22px;
 }
 
 .main-footer .social-icon {
@@ -1770,7 +1807,7 @@ input[name="toggle"] {
 	display: -ms-flexbox;
 	display: flex;
 	margin-top: 33px;
-	margin-left: 71px;
+	margin-left: 213px;
 }
 
 .about a {

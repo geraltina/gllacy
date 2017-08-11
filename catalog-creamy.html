@@ -2,6 +2,7 @@
 <html lang="ru">
 	<head>
 		<meta charset="utf-8">
+		<meta name="format-detection" content="telephone=no">
 		<title>HTML Academy: Глейси</title>
 		<link rel="stylesheet" type="text/css" href="css/normalize.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
@@ -100,7 +101,7 @@
 				<form action="evgpestr@yandex.ru" method="get" class="form-filter">
 					<div class="wrapper-1">
 						<fieldset class="sorting-group">
-							<b>Сортировка:</b>
+							<legend>Сортировка:</legend>
 							<select name="sorting" id="sorting">
 								<option>по популярности</option>
 								<option>сначала недорогие</option>
@@ -109,7 +110,7 @@
 							</select>
 						</fieldset>
 						<fieldset class="price-group">
-							<b>Цена: 100 руб. – 500 руб.</b>
+							<legend>Цена: 100 руб. – 500 руб.</legend>
 							<div class="range-controls" id="range">
 								<div class="scale">
 									<div class="bar"></div>
@@ -119,7 +120,7 @@
 							</div>
 						</fieldset>
 						<fieldset class="fat">
-							<b>Жирность:</b>
+							<legend>Жирность:</legend>
 							<div class="grey-bg">
 								<input type="radio" name="fat" id="fat-1" value="0%" class="radio-btn"><label for="fat-1">0%</label>
 								<input type="radio" name="fat" id="fat-2" value="10%" class="radio-btn" checked><label for="fat-2">до 10%</label>
@@ -130,7 +131,7 @@
 					</div>
 					<div class="wrapper-2">
 						<fieldset class="fillers">
-							<b>Наполнители:</b>
+							<legend>Наполнители:</legend>
 							<div class="fillers-grey">
 								<input type="checkbox" name="filler-1" id="filler-1" class="checkbox-btn" value="chocolate" checked><label for="filler-1">шоколадные</label>
 								<input type="checkbox" name="filler-2" id="filler-2" class="checkbox-btn" value="sugar" checked><label for="filler-2">сахарные присыпки</label>
@@ -276,6 +277,5 @@
 				<p class="copyright-text">Сделано в <a href="#">HTML Academy</a> &copy; 2017</p>
 			</section>
 		</footer>
-		<script src="js/file.js"></script>
 	</body>
 </html>
